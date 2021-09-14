@@ -9,15 +9,12 @@ do {
 
 let pic1 = "images/dice" + player1 + ".png";
 let pic2 = "images/dice" + player2 + ".png";
+
 document.querySelector("#img1").setAttribute("src", pic1);
 document.querySelector("#img2").setAttribute("src", pic2);
 
 if (player1 > player2) {
-    document.querySelector("h1").textContent = "Player 1 wins";
+  document.querySelector("h1").textContent = "Player 1 wins";
 } else {
-    document.querySelector("h1").textContent = "Player 2 wins";
+  document.querySelector("h1").textContent = "Player 2 wins";
 }
-
-
-
-
