@@ -1,11 +1,7 @@
-const randomNumber = () => Math.floor(Math.random() * 6 + 1);
+const randomNumber = () => Math.floor(Math.random() * 6) + 1;
 
-let player1, player2;
-
-do {
-  player1 = randomNumber();
-  player2 = randomNumber();
-} while (player1 === player2);
+let player1 = randomNumber();
+let player2 = randomNumber();
 
 let pic1 = "images/dice" + player1 + ".png";
 let pic2 = "images/dice" + player2 + ".png";
@@ -13,8 +9,12 @@ let pic2 = "images/dice" + player2 + ".png";
 document.querySelector("#img1").setAttribute("src", pic1);
 document.querySelector("#img2").setAttribute("src", pic2);
 
+let title = document.querySelector("h1");
+
 if (player1 > player2) {
-  document.querySelector("h1").textContent = "Player 1 wins";
+  title.textContent = "Player 1 wins";
+} else if (player1 < player2) {
+  title.textContent = "Player 2 wins";
 } else {
-  document.querySelector("h1").textContent = "Player 2 wins";
+  title.textContent = "It's a draw";
 }
