@@ -12,9 +12,9 @@ document.querySelector("#img2").setAttribute("src", pic2);
 let title = document.querySelector("h1");
 
 if (player1 > player2) {
-  title.textContent = "Player 1 wins :)";
+  title.textContent = "Player 1 wins 😁";
 } else if (player1 < player2) {
-  title.textContent = "Player 2 wins :)";
+  title.textContent = "Player 2 wins 😁";
 } else {
-  title.textContent = "It's a draw :|";
+  title.textContent = "It's a draw 😶";
 }
