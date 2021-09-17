@@ -21,6 +21,7 @@ header {
   text-shadow: 3px solid black;
   padding: 1rem;
   font-size: 5rem;
+  text-shadow: 2px 2px 8px #FF0000;
 }
 
 .drum-set {
@@ -70,7 +71,7 @@ header {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bolder;
   border-radius: 15px;
-  border: 8px solid rgb(214, 214, 218);
+  border: 8px solid rgb(129, 129, 196);
   width: 8rem;
   height: 8rem;
   margin: 2rem 1rem;
