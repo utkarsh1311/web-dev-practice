@@ -11,12 +11,11 @@ for (let index = 0; index < numberOfDrum; index++) {
 		});
 }
 
+// For detecting keyboard press
 
-// For detecting keyboard press 
-
-document.addEventListener("keydown", function(e) {
-    playSoundByKeyPress(e.key);
-})
+document.addEventListener("keydown", (e) => {
+	playSoundByKeyPress(e.key);
+});
 
 function playSoundByKeyPress(key) {
 	switch (key) {
