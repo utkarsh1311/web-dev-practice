@@ -1,6 +1,15 @@
 let buttonColor = ["red", "blue", "green", "yellow"];
 let userClickedPattern = [];
 let gamePattern = [];
+let currentLevel = 0;
+
+$(document).keypress(function (e) { 
+	if ($("#level-title").text() === "Press A Key to Start") {
+		console.log(e.key);
+		newSequence();
+		$("#level-title").text("Level 0");
+	}
+});
 
 function newSequence() {
 	let randomNumber = Math.floor(Math.random() * 4);
@@ -15,8 +24,6 @@ function newSequence() {
 
 	playSound(randomChosenColor);
 }
-
-newSequence();
 
 $(".btn").click(function () {
 	let userChoosenColor = $(this).attr("id");
