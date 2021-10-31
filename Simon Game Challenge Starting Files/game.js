@@ -19,13 +19,20 @@ function newSequence() {
 newSequence();
 
 $(".btn").click(function () {
-	let userChoosenColor = this.id;
+	let userChoosenColor = $(this).attr("id");
 	playSound(userChoosenColor);
 	userClickedPattern.push(userChoosenColor);
+	animatePress(userChoosenColor);
 });
 
 function playSound(randomColor) {
 	var audio = new Audio("sounds/" + randomColor + ".mp3");
-	audio.muted = false;
 	audio.play();
+}
+
+function animatePress(color) {
+	$("#" + color).addClass("pressed");
+	setTimeout(() => {
+		$("#" + color).removeClass("pressed");
+	}, 50);
 }
