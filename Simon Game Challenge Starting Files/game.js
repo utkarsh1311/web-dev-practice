@@ -18,6 +18,12 @@ function newSequence() {
 
 newSequence();
 
+$(".btn").click(function () {
+	let userChoosenColor = this.id;
+	playSound(userChoosenColor);
+	userClickedPattern.push(userChoosenColor);
+});
+
 function playSound(randomColor) {
 	var audio = new Audio("sounds/" + randomColor + ".mp3");
 	audio.muted = false;
