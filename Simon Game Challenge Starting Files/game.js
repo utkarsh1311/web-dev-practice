@@ -2,12 +2,13 @@ let buttonColor = ["red", "blue", "green", "yellow"];
 let userClickedPattern = [];
 let gamePattern = [];
 let currentLevel = 0;
+let started = false;
 
-$(document).keypress(function (e) { 
-	if ($("#level-title").text() === "Press A Key to Start") {
-		console.log(e.key);
+$(document).keypress(function (e) {
+	if (!started) {
+		$("#level-title").text("Level " + currentLevel);
 		newSequence();
-		$("#level-title").text("Level 0");
+		started = true;
 	}
 });
 
@@ -23,6 +24,9 @@ function newSequence() {
 		.fadeIn(200);
 
 	playSound(randomChosenColor);
+
+	currentLevel++;
+	$("#level-title").text("Level " + currentLevel);
 }
 
 $(".btn").click(function () {
