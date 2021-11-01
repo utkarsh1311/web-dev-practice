@@ -17,4 +17,5 @@ Use your computer keyboard to jam away musically!
 # 3. Simon Game Challenge
 A simple variant of the classic memory/attention game of Simon Says.
 <h2> How to play </h2>
+The game creates a series of tones and lights and requires a user to repeat the sequence. If the user succeeds, the series becomes progressively longer and more complex. Once the user fails or the time limit runs out, the game is over.
 <img width="1379" alt="Simon Game Challenge gameplay: Top text: Press A key to start. Underneath there is a group of four squares in different collours." src="https://user-images.githubusercontent.com/78051214/136666897-847da8e6-a922-4c72-81ec-b5776b4e2699.png">
