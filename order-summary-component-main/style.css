@@ -17,7 +17,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    font-weight: 800;
+	font-weight: 800;
 }
 
 .card {
@@ -97,7 +97,21 @@ body {
 a {
 	margin: 0 auto;
 	font-size: 0.7rem;
-    font-weight: 700;
+	font-weight: 700;
+}
+
+#payment {
+	width: 100%;
+	color: white;
+	padding: 0.8rem 1.5rem;
+	font-size: 0.85rem;
+	font-weight: bolder;
+	font-family: "Red Hat Display", sans-serif;
+	border-radius: 13px;
+	border-width: 0;
+	background: #dadadd;
+	box-shadow: 27px 27px 54px #b5b5b7, -27px -27px 54px #ffffff;
+	background-color: hsl(245, 75%, 52%);
 }
 
 .attribution {
