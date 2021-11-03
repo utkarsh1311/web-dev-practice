@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-family: "Red Hat Display", sans-serif;
+	background-color: hsl(225, 100%, 94%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 800;
+}
+
+.card {
+	background: #e0e0e0;
+	box-shadow: 12px 12px 43px #cacaca, -12px -12px 43px #f6f6f6;
+	border-radius: 13px;
+	background-color: #fff;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 20rem;
+}
+
+.card-body {
+	padding: 2.2rem;
+}
+
+.card-body h1 {
+	font-size: 1.2rem;
+	font-weight: bolder;
+	color: hsl(223, 47%, 23%);
+}
+
+.card-body p {
+	font-size: 0.75rem;
+	color: hsl(224, 23%, 55%);
+	padding: 1rem 1rem;
+}
+
+.card-img-top {
+	border-radius: 13px 13px 0 0;
+	width: 100%;
+	height: 100%;
+}
+
+.price-section {
+	margin: 0 0 1.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.price {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: fit-content;
+	align-items: center;
+}
+.price img {
+	width: 30%;
+	height: auto;
+	padding: 0.8rem;
+}
+
+.price-text {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.price-text h3 {
+	margin-bottom: 0;
+	font-size: 0.8rem;
+}
+.price-text p {
+    color: hsl(228, 45%, 44%);
+	margin-top: 0;
+	padding: 0;
+	font-size: 0.8rem;
+}
+
+#change {
+	margin: 0 auto;
+	font-size: 0.7rem;
+	font-weight: 700;
+    text-decoration: none;
+    color: hsl(228, 43%, 20%);
+}
+
+#payment {
+    margin-bottom: 1.3rem;
+	width: 100%;
+	color: white;
+	padding: 0.7rem 1.5rem;
+	font-size: 0.75rem;
+	font-weight: bolder;
+	font-family: "Red Hat Display", sans-serif;
+	border-radius: 10px;
+	border-width: 0;
+	background: #dadadd;
+	box-shadow: 27px 27px 54px #b5b5b7, -27px -27px 54px #ffffff;
+	background-color: hsl(245, 75%, 52%);
+}
+
+#cancel {
+	font-size: 0.7rem;
+	color: hsl(224, 23%, 55%);
+	text-decoration: none;
+
+}
+
+.attribution {
+	padding: 2rem;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
