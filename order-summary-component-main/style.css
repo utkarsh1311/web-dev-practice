@@ -17,6 +17,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    font-weight: 800;
 }
 
 .card {
@@ -95,7 +96,8 @@ body {
 
 a {
 	margin: 0 auto;
-	font-size: 0.8rem;
+	font-size: 0.7rem;
+    font-weight: 700;
 }
 
 .attribution {
