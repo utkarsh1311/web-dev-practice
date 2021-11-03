@@ -89,29 +89,40 @@ body {
 	font-size: 0.8rem;
 }
 .price-text p {
+    color: hsl(228, 45%, 44%);
 	margin-top: 0;
 	padding: 0;
 	font-size: 0.8rem;
 }
 
-a {
+#change {
 	margin: 0 auto;
 	font-size: 0.7rem;
 	font-weight: 700;
+    text-decoration: none;
+    color: hsl(228, 43%, 20%);
 }
 
 #payment {
+    margin-bottom: 1.3rem;
 	width: 100%;
 	color: white;
-	padding: 0.8rem 1.5rem;
-	font-size: 0.85rem;
+	padding: 0.7rem 1.5rem;
+	font-size: 0.75rem;
 	font-weight: bolder;
 	font-family: "Red Hat Display", sans-serif;
-	border-radius: 13px;
+	border-radius: 10px;
 	border-width: 0;
 	background: #dadadd;
 	box-shadow: 27px 27px 54px #b5b5b7, -27px -27px 54px #ffffff;
 	background-color: hsl(245, 75%, 52%);
+}
+
+#cancel {
+	font-size: 0.7rem;
+	color: hsl(224, 23%, 55%);
+	text-decoration: none;
+
 }
 
 .attribution {
