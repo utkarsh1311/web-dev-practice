@@ -39,19 +39,63 @@ body {
 .card-body h1 {
 	font-size: 1.2rem;
 	font-weight: bolder;
-    color: hsl(223, 47%, 23%);
+	color: hsl(223, 47%, 23%);
 }
 
 .card-body p {
-    font-size: 0.75rem;
-    color: hsl(224, 23%, 55%);
-    padding: 1rem 1rem;
+	font-size: 0.75rem;
+	color: hsl(224, 23%, 55%);
+	padding: 1rem 1rem;
 }
 
 .card-img-top {
 	border-radius: 13px 13px 0 0;
 	width: 100%;
 	height: 100%;
+}
+
+.price-section {
+	margin: 0 0 1.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.price {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: fit-content;
+	align-items: center;
+}
+.price img {
+	width: 30%;
+	height: auto;
+	padding: 0.8rem;
+}
+
+.price-text {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.price-text h3 {
+	margin-bottom: 0;
+	font-size: 0.8rem;
+}
+.price-text p {
+	margin-top: 0;
+	padding: 0;
+	font-size: 0.8rem;
+}
+
+a {
+	margin: 0 auto;
+	font-size: 0.8rem;
 }
 
 .attribution {
