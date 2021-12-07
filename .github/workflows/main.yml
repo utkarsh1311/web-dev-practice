@@ -1,0 +1,46 @@
+on: 
+  push
+jobs:
+  table:
+    runs-on: ubuntu-latest
+    name: Update README from json data
+    steps:
+    - uses: actions/checkout@v2
+    - name: Read/Write data into README
+      uses: eddiejaoude/github-actions-reader-writer@v0.1
+      with:
+        json-file-path: 'data.json'
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        columns: 3
+        object-field-names: '[ "tryItLink", "projectName", "imageUrl", "description" ]'
+        html-cell: '<td align="center"><div style="display:flex; flex-direction: column;"><h2>{{ projectName }}</h2><img src="{{ imageUrl }}" /><h3>{{ description }}</h3><h3><a href="{{ tryItLink }}">Try It</a></h3></div></td>'
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Get latest release
+        id: get-latest-release
+        uses: InsonusK/get-latest-release@v1.0.1
+        with:
+          myToken: ${{ github.token }}
+          view_top: 1
+
+      - name: Readme Download Button Action
+        env:
+          GITHUB_USER: "utkarsh1311"
+          REPO: "web-dev-practice"
+          FORMAT: "zip"
+          VERSION: "${{ steps.get-latest-release.outputs.tag_name }}"
+          COLOR: "blue"
+          BEGIN_TAG: "<!-- BEGIN LATEST DOWNLOAD BUTTON -->"
+          END_TAG: "<!-- END LATEST DOWNLOAD BUTTON -->"
+        run: |
+          UPDATE=$(cat README.md | perl -0777 -pe 's#(${{ env.BEGIN_TAG }})(?:.|\n)*?(${{ env.END_TAG }})#${1}\n[![Download ${{ env.FORMAT }}](https://custom-icon-badges.herokuapp.com/badge/-Download-${{ env.COLOR }}?style=for-the-badge&logo=download&logoColor=white "Download ${{ env.FORMAT }}")](https://github.com/${{ env.GITHUB_USER }}/${{ env.REPO }}/archive/${{ env.VERSION }}.${{ env.FORMAT }})\n${2}#g')
+          echo "${UPDATE}" > README.md
+
+      - uses: EndBug/add-and-commit@v7
+        with:
+          message: "docs(readme): Bump download button version to ${{ steps.get-latest-release.outputs.tag_name }}"
+          default_author: github_actions
+          branch: main
