@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- displays site properly based on user's device -->
-
+		<link rel="stylesheet" href="style.css" />
 		<link
 			rel="icon"
 			type="image/png"
@@ -16,9 +16,38 @@
 	</head>
 	<body>
 		<main>
-			<div class="head"></div>
-			<div class="screen"></div>
-			<div class="keypad"></div>
+			<div class="container">
+				<div class="head">
+					<div class="calc-title">
+						<h1>calc</h1>
+					</div>
+					<div class="theme">
+						<p>Theme</p>
+						<div>theme</div>
+					</div>
+				</div>
+				<div class="screen"></div>
+				<div class="keypad">
+					<input type="button" value="7" />
+					<input type="button" value="8" />
+					<input type="button" value="9" />
+					<input id="delete" type="button" value="DEL" />
+					<input type="button" value="4" />
+					<input type="button" value="5" />
+					<input type="button" value="6" />
+					<input type="button" value="+" />
+					<input type="button" value="1" />
+					<input type="button" value="2" />
+					<input type="button" value="3" />
+					<input type="button" value="-" />
+					<input type="button" value="." />
+					<input type="button" value="0" />
+					<input type="button" value="/" />
+					<input type="button" value="x" />
+					<input id="reset" type="button" value="RESET" />
+					<input id="equals" type="button" value="=" />
+				</div>
+			</div>
 		</main>
 	</body>
 </html>
