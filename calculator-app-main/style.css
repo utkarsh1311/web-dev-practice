@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	text-align: center;
+	font-family: "Spartan", sans-serif;
+	color: rgb(255, 255, 255);
+}
+
+main {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: hsl(222, 26%, 31%);
+}
+
+.container {
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	row-gap: 1rem;
+	padding: 1.5rem;
+	grid-template-rows: 1fr 1fr 4fr;
+}
+
+.head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.head:nth-child(1) {
+	padding: 1.5rem 0;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+p {
+	margin-right: 1rem;
+	font-size: small;
+	text-transform: uppercase;
+}
+
+.theme {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.screen {
+	border-radius: 10px;
+	/* grid-area: two; */
+	background-color: hsl(224, 36%, 15%);
+}
+
+input {
+	display: grid;
+	padding-top: 0.5rem;
+	align-items: center;
+	text-align: center;
+	font-family: "Spartan", sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	color: hsla(198, 19%, 13%, 0.747);
+	border: 0;
+	box-shadow: 0 4px hsl(223, 14%, 66%);
+	border-radius: 5px;
+}
+.keypad {
+	padding: 1rem;
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	border-radius: 10px;
+	background-color: hsl(223, 31%, 20%);
+}
+
+#reset {
+	color: white;
+	background-color: hsl(225, 21%, 49%);
+	box-shadow: 0 4px hsl(224, 28%, 35%);
+	color: white;
+	font-size: 1.2rem;
+	grid-column: 1 / 3;
+}
+
+#equals {
+	font-size: 1rem;
+	color: rgb(255, 255, 255);
+	background-color: hsl(6, 63%, 50%);
+	box-shadow: 0 4px hsl(6, 70%, 34%);
+	grid-column: 3 / 5;
+}
+
+#delete {
+	box-shadow: 0 4px hsl(224, 28%, 35%);
+	background-color: hsl(225, 21%, 49%);
+	color: white;
+	font-size: 1.2rem;
+}
