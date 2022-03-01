@@ -13,19 +13,23 @@ body {
 
 main {
 	height: 100vh;
+	width: 100vw;
 	display: flex;
-	align-items: center;
 	justify-content: center;
 	background-color: hsl(222, 26%, 31%);
 }
 
 .container {
-	height: 100vh;
 	width: 100vw;
 	display: grid;
 	row-gap: 1rem;
 	padding: 1.5rem;
 	grid-template-rows: 1fr 1fr 4fr;
+}
+@media only screen and (min-width: 40rem) {
+	.container {
+		max-width: 25rem;
+	}
 }
 
 .head {
