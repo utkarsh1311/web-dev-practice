@@ -22,5 +22,11 @@
         "tryItLink": "https://utkarsh1311.github.io/web-dev-practice/Simon%20Game%20Challenge%20Starting%20Files/index.html",
         "imageUrl": "https://user-images.githubusercontent.com/78051214/136666897-847da8e6-a922-4c72-81ec-b5776b4e2699.png",
         "description": "A digital version of the classic memory game called Simon Game! "
+    },
+    {
+        "projectName": "Advice generator app",
+        "tryItLink": "https://utkarsh1311.github.io/web-dev-practice/advice-generator-app-main/index.html",
+        "imageUrl": "./advice-generator-app-main/design/mobile-design.jpg",
+        "description": "A simple app to generate random advices"
     }    
 ]
