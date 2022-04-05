@@ -1,7 +1,11 @@
 module.exports = {
 	content: ["./*.{html,js}"],
 	theme: {
-		extend: {},
+		extend: {
+			fontSize: {
+				'quote': '28px'
+			}
+		},
 		colors: {
 			lcyan: "hsl(193, 38%, 86%)",
 			ngreen: "hsl(150, 100%, 66%)",
@@ -11,9 +15,6 @@ module.exports = {
 		},
 		fontFamily: {
 			manrope: ["Spartan", "sans-serif"],
-		},
-		fontSize: {
-			'quote': '28px',
 		},
 	},
 	plugins: [],
