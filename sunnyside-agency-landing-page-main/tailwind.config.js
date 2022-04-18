@@ -2,6 +2,9 @@ module.exports = {
 	content: ["*.html"],
 	theme: {
 		extend: {
+			width : {
+				menu: 'calc(100% - 2rem)'
+			},
 			colors: {
 				"grey-blue-light": "hsl(210, 4%, 67%)",
 				"dark-de-cyan": "hsl(167, 40%, 24%)",
