@@ -16,6 +16,24 @@ async function getNewQuote() {
 	console.log(quote);
 }
 
+let copy = document.querySelector("#copy");
+
+function copyToClickBoard(){
+    var content = quotePara.innerHTML;
+
+    navigator.clipboard.writeText(content)
+        .then(() => {
+        alert("advice copied successfully")
+    })
+        .catch(err => {
+        console.log('Something went wrong', err);
+    })
+ 
+}
+
+copy.addEventListener("click", copyToClickBoard);
+
+
 refreshButton.addEventListener("click", getNewQuote);
 
 window.onload = getNewQuote();
